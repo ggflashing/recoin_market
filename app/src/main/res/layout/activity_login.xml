@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Login_Activity">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in page"
+            android:textSize="30dp">
+
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/email_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Enter yor email                                          "
+        android:layout_marginLeft="30dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/password_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Your password                                          "
+        android:layout_marginLeft="30dp">
+    </EditText>
+
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Registation now"
+        android:background="@drawable/bg_frame"
+        android:layout_marginLeft="110dp">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/loggin_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="login"
+        android:background="@drawable/bg_frame"
+        android:layout_marginLeft="150dp">
+
+    </Button>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="30"
+        android:layout_marginLeft="10dp"
+        android:progressTint="@color/black"
+        android:visibility="visible"
+        android:layout_marginTop="10dp">
+    </ProgressBar>
+
+
+
+
+
+
+</LinearLayout>

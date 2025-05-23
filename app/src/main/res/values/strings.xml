@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">recoin_market</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="earn_coins"> Registration or Log In \n*Offers Use Conditions*\nLets earn Rick-coins\nby creating\nscenarios for cartoon</string>
+    <string name="conditions_eran">LoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem
+    IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem    IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum</string>
+    <string name="terms_of_the_offer">(Read the terms of the offer)</string>
+    <string name="to_by_rick_coins">You also have\nthe opportunity\nto by Rick-coins</string>
+    <string name="conditions_by_coins">LoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem    LoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="conditions_eran_full_variant">LoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem
+    IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem    IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum
+IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem    IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum
+IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem    IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum
+IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem    IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum
+IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem    IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum
+IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem    IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum
+IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem    IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum
+IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem    IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum
+IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem    IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum
+IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLorem    IpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsumLoremIpsum</string>
+
+    <string name="pdf_selected">SELECT \nPDF FILE</string>
+    <string name="explain_to_need__12_rickkoins">For change\nfavorite cartoon\nyou need earn 1200 Rick-koins\nfor explane to how to do it\nsee\nRick-coins EranPage</string>
+    <string name="upload_pdf_file">Upload \nyour \nPDF-file</string>
+    <string name="upload_word_file">Upload \nyour \nWORD-file</string>
+    <string name="word_selected">SELECT \nWORD FILE</string>
+    <string name="registration_page">RickCoins market \nplayers \nRegistration page</string>
+    <string name="coins_chat_market">Coins \nChatMarket</string>
+    <string name="earnrickcoin">Earn \nR-Coin</string>
+    <string name="change_favorite_cartoon">Change \nfavorite \ncartoon</string>
+    <string name="go_to_my_page">If you want have *Personal Page* and upload your scenarios for cartoon - please Read and Confirm Offerts and make Registration</string>
+
+</resources>
