@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1BBF8"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".ui.oferts.WordFragment">
+
+    <TextView
+        android:id="@+id/text_about_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Please_give_likes"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/layout_score"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_frame"
+        android:gravity="center"
+        android:padding="2dp">
+
+        <EditText
+            android:id="@+id/likes_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/give_scores_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="14dp"
+            android:src="@drawable/like_image88" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_of_doc_on_word_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Title"
+        android:textColor="#0A2CEF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginHorizontal="6dp"
+        android:src="@drawable/word_logo_04" />
+
+
+</LinearLayout>

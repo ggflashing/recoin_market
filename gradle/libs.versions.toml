@@ -1,10 +1,10 @@
 [versions]
-agp = "8.9.2"
+agp = "8.9.3"
 
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
-appcompat = "1.7.0"
+appcompat = "1.7.1"
 material = "1.12.0"
 constraintlayout = "2.2.1"
 
@@ -18,31 +18,23 @@ constraintlayout = "2.2.1"
 
 
 
-databindingRuntime = "8.9.2"
-
-
+databindingRuntime = "8.10.1"
 kotlin = "2.0.21"
 coreKtx = "1.16.0"
-
-
-lifecycleLivedataKtx = "2.8.7"
-lifecycleViewmodelKtx = "2.8.7"
-navigationFragmentKtx = "2.8.9"
-navigationUiKtx = "2.8.9"
+lifecycleLivedataKtx = "2.9.1"
+lifecycleViewmodelKtx = "2.9.1"
+navigationFragmentKtx = "2.9.0"
+navigationUiKtx = "2.9.0"
 activityKtx = "1.10.1"
-
-
-
 converterGson = "2.11.0"
 glide = "4.16.0"
 gson = "2.10.1"
 lottie = "3.6.1"
 lifecycleExtensions = "2.2.0"
-lifecycleRuntimeKtx = "2.8.7"
+lifecycleRuntimeKtx = "2.9.1"
 loggingInterceptor = "5.0.0-alpha.2"
 okhttp = "4.9.3"
 retrofit = "2.11.0"
-
 
 runner = "1.6.2"
 viewbindingpropertydelegate = "1.5.3"
@@ -52,8 +44,8 @@ circleimageview = "3.1.0"
 activity = "1.10.1"
 
 firebaseDatabase = "21.0.0"
-firebaseStorage = "21.0.1"
-firebaseAuthVersion = "23.2.0"
+firebaseStorage = "21.0.2"
+firebaseAuthVersion = "23.2.1"
 firebaseCore = "21.1.1"
 
 
@@ -102,15 +94,6 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 
 lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
 androidx-runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
-
-
-
-
-
-
-
-
-
 
 
 

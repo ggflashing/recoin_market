@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.recoin_market" />
+                  <option name="mobileSdkAppId" value="1:407863948458:android:6a992572e2655faca70cd3" />
+                  <option name="projectId" value="recoin-f6033" />
+                  <option name="projectNumber" value="407863948458" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

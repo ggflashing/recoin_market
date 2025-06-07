@@ -1,8 +1,11 @@
 package com.example.recoin_market
 
 import android.os.Bundle
+import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
+import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -26,10 +29,38 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-            )
+                R.id.navigation_home, R.id.cabinetFragment)
         )
 
         navView.setupWithNavController(navController)
+
+
+        navController.addOnDestinationChangedListener(
+            object :NavController.OnDestinationChangedListener{
+                override fun onDestinationChanged(
+                    controller: NavController,
+                    destination: NavDestination,
+                    arguments: Bundle?
+                ) {
+
+                    val list = ArrayList<Int>()
+                    list.add(R.id.marketFragment)
+                    list.add(R.id.reg_Activity)
+                    list.add(R.id.login_Activity)
+                    list.add(R.id.PDFFragment)
+                    list.add(R.id.navigation_home)
+                    list.add(R.id.navigation_payment)
+                    list.add(R.id.navigation_dashboard)
+
+                    if(list.contains(destination.id)) {
+                        navView.visibility = View.GONE
+                    }else {
+                        navView.visibility = View.VISIBLE
+                    }
+
+                }
+            }
+        )
+
     }
 }

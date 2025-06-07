@@ -10,6 +10,7 @@
     tools:context=".ui.dashboard.DashboardFragment">
 
     <ImageButton
+        android:id="@+id/btn_back"
         android:layout_width="40dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
@@ -91,6 +92,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/tv_pay"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

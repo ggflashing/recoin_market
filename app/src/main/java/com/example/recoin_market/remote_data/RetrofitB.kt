@@ -1,12 +1,10 @@
 package com.example.recoin_market.remote_data
 
 import com.example.recoin_market.ConstantApi
-import com.example.recoin_market.repositores.Char_Apiservice
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import java.util.concurrent.TimeUnit
 
 object RetrofitB {

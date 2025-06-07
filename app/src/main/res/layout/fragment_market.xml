@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFF4A4"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".ui.coins_market.MarketFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_current_users_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="19dp"
+                android:background="@drawable/bg_frame"
+                android:padding="6dp"
+                android:text="mm@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/sale_buy_btn"
+                    android:layout_width="110dp"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/bg_frame"
+                    android:padding="6dp"
+                    android:text="Sale/Buy Coins"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coins_chat_market"
+                    android:textAlignment="center"
+                    android:textColor="#F00606"
+                    android:textSize="22sp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/make_message_btn"
+                    android:layout_width="110dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/bg_frame"
+                    android:padding="6dp"
+                    android:text="Message"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_enter_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Enter message"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/et_make_message"
+                    android:layout_width="match_parent"
+
+
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="9dp"
+                android:layout_marginTop="22dp"
+                tools:ignore="TouchTargetSizeCheck" />
+                <ImageView
+                    android:id="@+id/upload_new_message"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:contentDescription="upload user btn"
+                    android:src="@drawable/bg_frame" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_enter_sale_buy_coins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="My  coins sale/buy: "
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="end">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Coins to sale:"
+                        tools:ignore="TouchTargetSizeCheck" />
+                    <EditText
+                        android:id="@+id/et_to_sale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:inputType="number"
+                        tools:ignore="TouchTargetSizeCheck" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="coins to buy:"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/et_to_buy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:inputType="number"
+                        tools:ignore="TouchTargetSizeCheck" />
+                    <ImageView
+                        android:id="@+id/upload_change_sale_buy"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:contentDescription="upload user btn"
+                        android:src="@drawable/bg_frame" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_coins_market"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_chat_buble" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

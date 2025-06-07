@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "407863948458",
+    "project_id": "recoin-f6033",
+    "storage_bucket": "recoin-f6033.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407863948458:android:6a992572e2655faca70cd3",
+        "android_client_info": {
+          "package_name": "com.example.recoin_market"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0F2PxqotNQW3A9IB9ihp3Jod05DQ4GLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,11 +15,15 @@ class Market_Repository {
 
     val ussers_data: MutableLiveData<List<UserModels>?> = MutableLiveData<List<UserModels>?>()
     private var databaseReferenceUsers: DatabaseReference = FirebaseDatabase.getInstance().reference.child("user_person")
+
+
+
     fun getUsersList(): LiveData<List<UserModels>?> {
         databaseReferenceUsers.addValueEventListener(object :ValueEventListener {
+
             override fun onDataChange(snapshot: DataSnapshot) {
-                val tempList = mutableListOf<UserModels>()
-                snapshot.children.forEach {
+                val tempList = mutableListOf<UserModels>() //mutableListOf бесконечный лист связан с бекендом
+                snapshot.children.forEach { //forEach пробегается по списку в children onDataChange (связь лист snapshot в firebase
                     val user = it.getValue(UserModels::class.java)
                     user?.let {
                         tempList.add(it)

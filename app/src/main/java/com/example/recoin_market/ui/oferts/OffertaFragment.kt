@@ -1,34 +1,34 @@
-package com.example.recoin_market.ui.dashboard
+package com.example.recoin_market.ui.oferts
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.airbnb.lottie.LottieAnimationView
 import com.example.recoin_market.R
-import com.example.recoin_market.databinding.FragmentDashboardBinding
+import com.example.recoin_market.databinding.FragmentOffertaBinding
+import com.example.recoin_market.visibility
 
-class DashboardFragment : Fragment() {
 
-    private var _binding: FragmentDashboardBinding? = null
+class OffertaFragment : Fragment() {
+
+    private var _binding: FragmentOffertaBinding? = null
     private val binding get() = _binding!!
-    var lotty_dash_page: LottieAnimationView? = null
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+    ): View? {
+        _binding = FragmentOffertaBinding.inflate(inflater, container, false)
         val root: View = binding.root
-        lotty_dash_page = binding.lottyDashPage
-        lotty_dash_page!!.setAnimation(R.raw.three_coins)
+
         setUpOnBackPressed()
+
+
+
 
         return root
     }
@@ -36,13 +36,14 @@ class DashboardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnBack.setOnClickListener {
-            findNavController().navigate(R.id.action_navigation_dashboard_to_navigation_home)
+            findNavController().navigate(R.id.action_offertaFragment_to_navigation_dashboard)
         }
-        binding.tvMoreAboutOferta.setOnClickListener {
-            findNavController().navigate(R.id.action_navigation_dashboard_to_offertaFragment)
+        binding.chekOffertaBtn.setOnClickListener {
+            binding.registrationBtn.visibility(true)
+            binding.registrationBlobBtn.visibility (false)
         }
-        binding.tvPay.setOnClickListener {
-            findNavController().navigate(R.id.action_navigation_dashboard_to_navigation_payment)
+        binding.registrationBtn.setOnClickListener {
+            findNavController().navigate(R.id.action_offertaFragment_to_reg_Activity)
         }
     }
 
@@ -57,8 +58,5 @@ class DashboardFragment : Fragment() {
             })
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
+
 }

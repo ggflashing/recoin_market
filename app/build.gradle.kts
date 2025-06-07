@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+
+
+
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -46,8 +50,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
-    implementation(libs.androidx.navigation.fragment.ktx)
-    implementation(libs.androidx.navigation.ui.ktx)
+
     testImplementation(libs.junit)
     implementation(libs.androidx.recyclerview)
 
@@ -103,10 +106,12 @@ dependencies {
     // круглое изображение
     implementation (libs.circleimageview)
 
+    //PDF viewer
+    implementation ("com.github.barteksc:AndroidPdfViewerV1:1.6.0")
 
+    implementation(platform("com.google.firebase:firebase-bom:33.14.0"))
 
-
-
+    implementation("com.google.firebase:firebase-analytics")
 
 
 

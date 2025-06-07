@@ -9,17 +9,107 @@
         android:id="@+id/navigation_home"
         android:name="com.example.recoin_market.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_cabinetFragment"
+            app:destination="@id/cabinetFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_login_Activity"
+            app:destination="@id/login_Activity" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+        <action
+            android:id="@+id/action_navigation_home_to_cabinetFragment2"
+            app:destination="@id/cabinetFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.recoin_market.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_payment"
+            app:destination="@id/navigation_payment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_offertaFragment"
+            app:destination="@id/offertaFragment" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.recoin_market.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_payment"
+        android:name="com.example.recoin_market.ui.notifications.payment_fragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_payment" />
+    <fragment
+        android:id="@+id/cabinetFragment"
+        android:name="com.example.recoin_market.ui.oferts.CabinetFragment"
+        android:label="fragment_cabinet"
+        tools:layout="@layout/fragment_cabinet" >
+        <action
+            android:id="@+id/action_cabinetFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_cabinetFragment_to_PDFFragment"
+            app:destination="@id/PDFFragment" />
+        <action
+            android:id="@+id/action_cabinetFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/marketFragment"
+        android:name="com.example.recoin_market.ui.coins_market.MarketFragment"
+        android:label="fragment_market"
+        tools:layout="@layout/fragment_market" >
+        <action
+            android:id="@+id/action_marketFragment_to_cabinetFragment"
+            app:destination="@id/cabinetFragment" />
+        <action
+            android:id="@+id/action_marketFragment_self"
+            app:destination="@id/marketFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/login_Activity"
+        android:name="com.example.recoin_market.Login_Activity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/reg_Activity"
+        android:name="com.example.recoin_market.Reg_Activity"
+        android:label="activity_reg"
+        tools:layout="@layout/activity_reg" />
+    <fragment
+        android:id="@+id/PDFFragment"
+        android:name="com.example.recoin_market.ui.oferts.PDFFragment"
+        android:label="fragment_p_d_f"
+        tools:layout="@layout/fragment_p_d_f" >
+        <action
+            android:id="@+id/action_PDFFragment_to_cabinetFragment"
+            app:destination="@id/cabinetFragment" />
+        <action
+            android:id="@+id/action_PDFFragment_to_cabinetFragment2"
+            app:destination="@id/cabinetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/offertaFragment"
+        android:name="com.example.recoin_market.ui.oferts.OffertaFragment"
+        android:label="fragment_offerta"
+        tools:layout="@layout/fragment_offerta" >
+        <action
+            android:id="@+id/action_offertaFragment_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+        <action
+            android:id="@+id/action_offertaFragment_to_reg_Activity"
+            app:destination="@id/reg_Activity" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordFragment"
+        android:name="com.example.recoin_market.ui.oferts.WordFragment"
+        android:label="fragment_word"
+        tools:layout="@layout/fragment_word" />
 </navigation>

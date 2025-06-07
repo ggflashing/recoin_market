@@ -4,13 +4,12 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.recoin_market.databinding.ItemCardBinding
 import com.example.recoin_market.loadImage
 import com.example.recoin_market.models.Char_result
 
-class charAdapter (var context: Context, var list: List<Char_result?>?)
-    :RecyclerView.Adapter<charAdapter.ViewHolder>(){
+class CharAdapter (var context: Context, var list: List<Char_result?>?)
+    :RecyclerView.Adapter<CharAdapter.ViewHolder>(){
 
 private lateinit var binding: ItemCardBinding
 
@@ -20,7 +19,7 @@ private lateinit var binding: ItemCardBinding
         return ViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: charAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: CharAdapter.ViewHolder, position: Int) {
         list?.get(position)?.let {
             holder.onBind(it)
         }

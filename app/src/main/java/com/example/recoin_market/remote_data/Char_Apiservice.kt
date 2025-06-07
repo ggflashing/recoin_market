@@ -1,4 +1,4 @@
-package com.example.recoin_market.repositores
+package com.example.recoin_market.remote_data
 
 import com.example.recoin_market.models.Char_result
 import retrofit2.Call
@@ -14,7 +14,7 @@ interface Char_Apiservice {
 @GET(value = "/api/character/{ids}")
 fun getAllData(
     @Path("ids")
-    ids:String = list_id.joinToString { "," }
+    ids:String = list_id.joinToString { "," } // joinToString воспринимает через (,)
 
 ): Call<List<Char_result>>
 
